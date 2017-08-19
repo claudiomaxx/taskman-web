@@ -1,6 +1,6 @@
 {
   "name": "taskman-web",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -17,5 +17,9 @@
     "url": "https://github.com/claudiomaxx/taskman-web/issues"
   },
   "homepage": "https://github.com/claudiomaxx/taskman-web#readme",
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
 }

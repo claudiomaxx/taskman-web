@@ -1,0 +1,9 @@
+<h3>Department</h3>
+
+<div class="tm-box">
+    <form name="departmentFrm">
+        <input type="text" ng-model="vm.department.name" name="departmentName" required>
+        
+        <button ng-click="vm.save()" ng-disabled="departmentFrm.departmentName.$invalid">Save</button>
+    </form>
+</div>

@@ -1,0 +1,39 @@
+body {
+  font: 100% sans-serif;
+  background: #eee;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
+}
+
+#tm-header {
+  background: #2979ff;
+  color: #fff;
+  padding: 0.7rem;
+  
+  h1 {
+    text-align: center;
+    font-size: 1.2rem;
+  }
+}
+
+h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.tm-box {
+  display: flex;
+  background: #fff;
+  padding: 0.7rem;
+  box-shadow: 0 0 #333;
+}
+
+input, button {
+  background: #fff;
+  border: solid 1px #aaa;
+  padding: 0.5rem;
+  border-radius: 0.2rem;
+}
