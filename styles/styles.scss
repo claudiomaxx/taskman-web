@@ -1,9 +1,12 @@
+* {
+  font: 100% 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
 body {
-  font: 100% sans-serif;
   background: #eee;
 }
 
-body, h1, h2, h3, h4, h5, h6 {
+body, h1, h2, h3, h4, h5, h6, ul, li {
   margin: 0;
   padding: 0;
 }
@@ -19,21 +22,127 @@ body, h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#tm-content {
+  max-width: 70%;
+  margin: auto
+}
+
 h3 {
   margin-bottom: 1rem;
   font-size: 1rem;
 }
 
+
 .tm-box {
   display: flex;
   background: #fff;
-  padding: 0.7rem;
-  box-shadow: 0 0 #333;
+  padding: 1.5rem;
+  box-shadow: 0px 0px 15px #ddd;
+  border: solid 1px #fff;
+  margin-top: 1rem;
 }
 
-input, button {
+input, button, textarea, select {
   background: #fff;
-  border: solid 1px #aaa;
+  border: none;
+  background: #efefef;
+  padding: 0.8rem;
+  color: #333 !important;
+  border-radius: 0.0rem;
+  font-size: 0.9rem;
+}
+
+button {
+  padding: 0.4rem 1rem;
+}
+
+.form-element {
+  margin-bottom: 0.5rem;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-center {
+  align-items: center;
+}
+
+$i: 24;
+@while $i > 0 {
+  .col-#{$i} { width: (100% * $i) / 24;}
+  $i: $i - 1;
+}
+
+.col {
+  width: auto;
+}
+
+form {
+  width: 100%;
+}
+
+
+button:disabled {
+  background: #eee;
+}
+
+button {
+  padding: 0.8rem 1.2rem;
+}
+
+.btn--primary {
+  background-color: #2979ff !important;
+  color: #fff !important;
+}
+
+.btn--none {
+  background: none !important;
+}
+
+li {
+  list-style: none;
+}
+
+.list li {
+  padding: 1rem 0;
+  border: solid 1px #eee;
+  border-width: 0 0 1px 0;
+}
+
+.list li:last-child {
+  border: none;
+}
+
+.tag {
+  background: #eee;
   padding: 0.5rem;
   border-radius: 0.2rem;
+  font-size: 0.8rem;
+}
+
+.ta-right {
+  text-align: right;
+}
+
+.tx-grey {
+  color: #777;
+}
+
+.tx-primary {
+  color: #2979ff;
+}
+
+.tx-warning {
+  color: orange;
+}
+
+.bg-warning {
+  background: orange;
+}
+
+.desc {
+  font-size: 0.8rem;
+  color: #777;
 }

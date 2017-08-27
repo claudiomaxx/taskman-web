@@ -8,6 +8,11 @@
     <script src="taskman-app.js"></script>
     <script src="taskman-services.js"></script>
     <script src="department-controllers.js"></script>
+    <script src="user-controllers.js"></script>
+    <script src="task-controllers.js"></script>
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 
@@ -20,10 +25,10 @@
 
     </div>
 
-    <ul id="tm-messages">
-        <li ng-repeat="message in messages">{{message.type}} {{message.text}}</li>
-    </ul>
     <div id="tm-content">
+        <ul id="tm-messages">
+            <li ng-repeat="message in messages">{{message.type}} {{message.text}}</li>
+        </ul>
 
         <ng-view></ng-view>
     </div>

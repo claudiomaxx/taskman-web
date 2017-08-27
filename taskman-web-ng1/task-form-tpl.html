@@ -1,0 +1,21 @@
+
+<div class="tm-box">
+    <form name="taskFrm">
+        <h3>CREATE A TASK</h3>
+
+        <div class="form-element">
+            <input type="text" ng-model="vm.task.name" name="taskName" placeholder="Task name" size="50" required>
+        </div>
+        <div class="form-element">
+            <select name="taskDepartment" ng-model="vm.task.department" ng-options="department as department.name for department in vm.departmentList" >
+                <option value="">Department</option>
+            </select>
+        </div>
+        <div class="form-element">
+            <textarea name="taskDescription" ng-model="vm.task.description" cols="30" rows="10" class="col-24" placeholder="Task description" required></textarea>
+        </div>
+
+        <button ng-click="vm.save()" ng-disabled="taskFrm.$invalid" class="btn--primary">Save</button>
+        <button ng-click="vm.save()" ng-disabled="taskFrm.$invalid" class="btn--none">Cancel</button>
+    </form>
+</div>
