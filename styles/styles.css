@@ -10,12 +10,25 @@ body, h1, h2, h3, h4, h5, h6, ul, li {
   padding: 0; }
 
 #tm-header {
-  background: #2979ff;
+  background: #2962ff;
   color: #fff;
-  padding: 0.7rem; }
+  height: 3.5rem; }
   #tm-header h1 {
     text-align: center;
     font-size: 1.2rem; }
+
+#tm-sidemenu {
+  width: 3.5rem;
+  height: 100%;
+  float: left;
+  background: #999; }
+  #tm-sidemenu ul > li {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0 0;
+    display: block; }
+    #tm-sidemenu ul > li a {
+      color: #2962ff; }
 
 #tm-content {
   max-width: 70%;
@@ -43,7 +56,11 @@ input, button, textarea, select {
   font-size: 0.9rem; }
 
 button {
-  padding: 0.4rem 1rem; }
+  font-size: 0.8rem;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.1rem;
+  font-weight: bold;
+  text-transform: uppercase; }
 
 .form-element {
   margin-bottom: 0.5rem; }
@@ -136,15 +153,15 @@ form {
 button:disabled {
   background: #eee; }
 
-button {
-  padding: 0.8rem 1.2rem; }
-
 .btn--primary {
-  background-color: #2979ff !important;
+  background-color: #2962ff !important;
   color: #fff !important; }
 
 .btn--none {
   background: none !important; }
+
+.tm-btn-bar {
+  text-align: right; }
 
 li {
   list-style: none; }
@@ -170,7 +187,7 @@ li {
   color: #777; }
 
 .tx-primary {
-  color: #2979ff; }
+  color: #2962ff; }
 
 .tx-warning {
   color: orange; }
