@@ -2,6 +2,9 @@
   font: 100% 'Roboto', sans-serif;
   box-sizing: border-box; }
 
+html, body {
+  height: 100%; }
+
 body {
   background: #eee; }
 
@@ -9,42 +12,50 @@ body, h1, h2, h3, h4, h5, h6, ul, li {
   margin: 0;
   padding: 0; }
 
+.tm-flex-col {
+  display: flex;
+  height: 100%; }
+
 #tm-header {
-  background: #2962ff;
+  background: #1E88E5;
   color: #fff;
-  height: 3.5rem; }
+  height: 3.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   #tm-header h1 {
-    text-align: center;
-    font-size: 1.2rem; }
+    font-size: 1.4rem; }
 
 #tm-sidemenu {
   width: 3.5rem;
-  height: 100%;
-  float: left;
-  background: #999; }
+  flex: 'flex-grow';
+  background: #fff; }
   #tm-sidemenu ul > li {
     width: 100%;
     text-align: center;
     padding: 1rem 0 0;
     display: block; }
     #tm-sidemenu ul > li a {
-      color: #2962ff; }
+      color: #1E88E5; }
 
 #tm-content {
-  max-width: 70%;
-  margin: auto; }
+  width: 100%;
+  padding: 1rem;
+  margin: 0 auto; }
 
 h3 {
   margin-bottom: 1rem;
   font-size: 1rem; }
 
 .tm-box {
-  display: flex;
   background: #fff;
   padding: 1.5rem;
   box-shadow: 0px 0px 15px #ddd;
   border: solid 1px #fff;
-  margin-top: 1rem; }
+  margin-bottom: 1rem; }
+
+.tm-box--header {
+  color: #1E88E5; }
 
 input, button, textarea, select {
   background: #fff;
@@ -144,6 +155,9 @@ button {
 .col-1 {
   width: 4.1666666667%; }
 
+.pad-1 {
+  padding: 1rem; }
+
 .col {
   width: auto; }
 
@@ -154,7 +168,7 @@ button:disabled {
   background: #eee; }
 
 .btn--primary {
-  background-color: #2962ff !important;
+  background-color: #1E88E5 !important;
   color: #fff !important; }
 
 .btn--none {
@@ -183,17 +197,23 @@ li {
 .ta-right {
   text-align: right; }
 
+.ta-center {
+  text-align: center; }
+
 .tx-grey {
   color: #777; }
 
 .tx-primary {
-  color: #2962ff; }
+  color: #1E88E5; }
+
+.tx-success {
+  color: #43A047; }
 
 .tx-warning {
-  color: orange; }
+  color: #FF9800; }
 
 .bg-warning {
-  background: orange; }
+  background: #FF9800; }
 
 .desc {
   font-size: 0.8rem;

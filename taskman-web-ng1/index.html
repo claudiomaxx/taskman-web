@@ -19,23 +19,29 @@
 
 <body>
     <div id="tm-header">
-        <h1>Taskman</h1>
-        <!-- <i class="material-icons">account_circle</i> -->
+            <div class="col-1 pad-1"><i class="material-icons">keyboard_arrow_left</i></div>
+            <div class="col-22">
+                <h1 class="ta-center">Taskman</h1>
+            </div>
+        <div class="col-1 ta-right pad-1"><i class="material-icons">add</i></div>
     </div>
+    
+    <div class="tm-flex-col">
+        <div id="tm-sidemenu">
+            <ul>
+                <!-- <i class="material-icons">account_circle</i> -->
+                <li><a href><i class="material-icons">assignment</i></a></li>
+                <li><a href><i class="material-icons">folder</i></a></li>
+            </ul>
+        </div>
 
-    <div id="tm-sidemenu">
-        <ul>
-            <li><a href><i class="material-icons">assignment</i></a></li>
-            <li><a href><i class="material-icons">folder</i></a></li>
-        </ul>
-    </div>
+        <div id="tm-content">
+            <ul id="tm-messages">
+                <li ng-repeat="message in messages">{{message.type}} {{message.text}}</li>
+            </ul>
 
-    <div id="tm-content">
-        <ul id="tm-messages">
-            <li ng-repeat="message in messages">{{message.type}} {{message.text}}</li>
-        </ul>
-
-        <ng-view></ng-view>
+            <ng-view></ng-view>
+        </div>
     </div>
 </body>
 

@@ -1,6 +1,13 @@
+$primary-color: #1E88E5;
+$success-color: #43A047;
+$warning-color: #FF9800;
+
 * {
   font: 100% 'Roboto', sans-serif;
   box-sizing: border-box;
+}
+html,body {
+  height: 100%;
 }
 body {
   background: #eee;
@@ -11,23 +18,29 @@ body, h1, h2, h3, h4, h5, h6, ul, li {
   padding: 0;
 }
 
+.tm-flex-col {
+  display: flex;
+  height: 100%;
+}
+
 #tm-header {
-  background: #2962ff;
+  background: $primary-color;
   color: #fff;
   height: 3.5rem;
-  // padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   h1 {
-    text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
 }
 
 #tm-sidemenu {
   width: 3.5rem;
-  height: 100%;
-  float: left;
-  background: #999;
+  flex: 'flex-grow';
+  
+  background: #fff;
 
   ul > li {
     width: 100%;
@@ -36,15 +49,17 @@ body, h1, h2, h3, h4, h5, h6, ul, li {
     display: block;
 
     a {
-      color: #2962ff;
+      color: $primary-color;
     }
   }
 
 }
 
 #tm-content {
-  max-width: 70%;
-  margin: auto
+  width: 100%;
+  padding: 1rem;
+  // max-width: 90%;
+  margin: 0 auto;
 }
 
 h3 {
@@ -54,12 +69,15 @@ h3 {
 
 
 .tm-box {
-  display: flex;
   background: #fff;
   padding: 1.5rem;
   box-shadow: 0px 0px 15px #ddd;
   border: solid 1px #fff;
-  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.tm-box--header {
+  color: $primary-color;
 }
 
 input, button, textarea, select {
@@ -99,6 +117,10 @@ $i: 24;
   $i: $i - 1;
 }
 
+.pad-1 {
+  padding: 1rem;
+}
+
 .col {
   width: auto;
 }
@@ -114,7 +136,7 @@ button:disabled {
 
 
 .btn--primary {
-  background-color: #2962ff !important;
+  background-color: $primary-color !important;
   color: #fff !important;
 }
 
@@ -151,20 +173,28 @@ li {
   text-align: right;
 }
 
+.ta-center {
+  text-align: center;
+}
+
 .tx-grey {
   color: #777;
 }
 
 .tx-primary {
-  color: #2962ff;
+  color: $primary-color;
+}
+
+.tx-success {
+  color: $success-color;
 }
 
 .tx-warning {
-  color: orange;
+  color: $warning-color;
 }
 
 .bg-warning {
-  background: orange;
+  background: $warning-color;
 }
 
 .desc {
